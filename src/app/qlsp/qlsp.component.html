@@ -1,0 +1,23 @@
+<h1 class="h1" align=center style="padding-top:50px">Quản lí sản phẩm</h1>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Giá sản phẩm</th>
+            <th scope="col">Mô tả</th>
+            <th scope="col">Tình trạng</th>
+            <th scope="col">Xoá</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <th scope="row">{{product.id}}</th>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.desc}}</td>
+            <td>{{product.status ? 'Còn hàng' : 'Hết hàng'}}</td>
+            <td><button class="btn btn-primary" (click)="removeItem(product.id)">Xoá</button></td>
+        </tr>
+    </tbody>
+</table>
