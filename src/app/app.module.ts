@@ -15,7 +15,6 @@ const routes: Routes =[
 {path: '',component: HomeComponent},
 {path: 'home',component: HomeComponent},
 {path: 'qlsp',component: QlspComponent},
-
 ];
 @NgModule({
   imports:      [ BrowserModule, FormsModule,RouterModule.forRoot(routes) ],
