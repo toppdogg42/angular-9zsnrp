@@ -47,6 +47,38 @@ export const Data: Product[] = [
         desc: "Mô tả sản phẩm",
         img: 'http://placehold.it/700x400',
         status: true,
+    },
+    {
+        id:7,
+        name: "Sản phẩm 7",
+        price: 1000,
+        desc: "Mô tả sản phẩm",
+        img: 'http://placehold.it/700x400',
+        status: true,
+    },
+    {
+        id:8,
+        name: "Sản phẩm 8",
+        price: 1000,
+        desc: "Mô tả sản phẩm",
+        img: 'http://placehold.it/700x400',
+        status: true,
+    },
+    {
+        id:9,
+        name: "Sản phẩm 9",
+        price: 1000,
+        desc: "Mô tả sản phẩm",
+        img: 'http://placehold.it/700x400',
+        status: true,
+    },
+    {
+        id:10,
+        name: "Sản phẩm 10",
+        price: 1000,
+        desc: "Mô tả sản phẩm",
+        img: 'http://placehold.it/700x400',
+        status: true,
     }
 
 ]
