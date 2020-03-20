@@ -17,4 +17,7 @@ export class ProductService {
     let newObj = { id: 4, ...product };
     this.products.push(newObj);
   }
+  removeProduct(id) {
+    return this.products = this.products.filter(product => product.id != id);
+  }
 }
