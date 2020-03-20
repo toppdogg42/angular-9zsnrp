@@ -14,11 +14,12 @@ import { QlspComponent } from './qlsp/qlsp.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import {AppRoutingModule} from './app-routing.module';
 import { ProductService } from './service/product.service';
+import { ProductAddComponent } from './product-add/product-add.component';
 
 @NgModule({
   imports:      [ BrowserModule,AppRoutingModule, FormsModule, ],
   exports:[RouterModule],
-  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, HomeComponent, QlspComponent, ProductDetailComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, HomeComponent, QlspComponent, ProductDetailComponent, ProductAddComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
