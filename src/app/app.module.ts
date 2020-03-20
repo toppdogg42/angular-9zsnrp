@@ -13,11 +13,13 @@ import { HomeComponent } from './home/home.component';
 import { QlspComponent } from './qlsp/qlsp.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import {AppRoutingModule} from './app-routing.module';
+import { ProductService } from './service/product.service';
 
 @NgModule({
   imports:      [ BrowserModule,AppRoutingModule, FormsModule, ],
   exports:[RouterModule],
   declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, HomeComponent, QlspComponent, ProductDetailComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [ProductService]
 })
 export class AppModule { }
