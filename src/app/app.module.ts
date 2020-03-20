@@ -12,13 +12,10 @@ import { CategoryComponent } from './category/category.component';
 import { HomeComponent } from './home/home.component';
 import { QlspComponent } from './qlsp/qlsp.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-const routes: Routes =[
-{path: '',component: HomeComponent},
-{path: 'home',component: HomeComponent},
-{path: 'qlsp',component: QlspComponent},
-];
+import {AppRoutingModule} from './app-routing.module';
+
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,RouterModule.forRoot(routes) ],
+  imports:      [ BrowserModule,AppRoutingModule, FormsModule, ],
   exports:[RouterModule],
   declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, HomeComponent, QlspComponent, ProductDetailComponent ],
   bootstrap:    [ AppComponent ]
