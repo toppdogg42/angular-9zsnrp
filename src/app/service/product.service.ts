@@ -9,7 +9,9 @@ export class ProductService {
   products = Data;
 
   constructor() {}
-  getProduct() {}
+  getProduct(id) {
+    return this.products.find(product => product.id ==id);
+  }
   getProducts() {
     return this.products;
   }
@@ -19,5 +21,8 @@ export class ProductService {
   }
   removeProduct(id) {
     return this.products = this.products.filter(product => product.id != id);
+  }
+  updateProduct(product){
+    return this.products.map( item => item.id === product.id ? product : item);
   }
 }

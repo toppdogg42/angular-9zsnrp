@@ -12,7 +12,8 @@
                 <h5>{{product.price}}</h5>
                 <p class="card-text">{{product.desc}}</p>
                 <p class="card-text">{{product.status ? 'Còn hàng' : 'Hết hàng'}}</p>
-                <button (click)="showDetail(product)">Chi tiết</button>
+                <!-- <button (click)="showDetail(product)">Chi tiết</button> -->
+                <button routerLink="/product/{{product.id}}">Chi tiết</button>
             </div>
             <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>

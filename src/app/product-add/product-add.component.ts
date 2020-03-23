@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../Product';
 import { ProductService } from '../service/product.service';
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-product-add',
   templateUrl: './product-add.component.html',
@@ -9,12 +10,18 @@ import { ProductService } from '../service/product.service';
 export class ProductAddComponent implements OnInit {
 product:Product = new Product();
   constructor(
-    private productService: ProductService
+    private productService: ProductService,
+    private route: ActivatedRoute,
+    private router: Router
   ) { }
 
-  ngOnInit() {
+  ngOnInit():void {
+    
   }
+  
+
 addProduct(){
-  this.productService.addProduct(this.product)
+  this.productService.addProduct(this.product);
 }
+
 }

@@ -1,4 +1,4 @@
-<form>
+<form *ngIf="product">
     <div class="form-group">
         <label for="exampleInputEmail1">Product Name</label>
         <input type="text" class="form-control" name="name" [(ngModel)]="product.name">

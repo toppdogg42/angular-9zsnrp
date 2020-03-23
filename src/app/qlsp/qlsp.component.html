@@ -9,7 +9,7 @@
             <th scope="col">Giá sản phẩm</th>
             <th scope="col">Mô tả</th>
             <th scope="col">Tình trạng</th>
-            <th scope="col">Xoá</th>
+            <th scope="col">Hoạt động</th>
         </tr>
     </thead>
     <tbody>
@@ -19,7 +19,7 @@
             <td>{{product.price}}</td>
             <td>{{product.desc}}</td>
             <td>{{product.status ? 'Còn hàng' : 'Hết hàng'}}</td>
-            <td><button class="btn btn-primary" (click)="removeItem(product.id)">Xoá</button></td>
+            <td><button class="btn btn-primary" (click)="removeItem(product.id)">Xoá</button><button class="btn btn-primary" routerLink="/qlsp/{{product.id}}">Sửa</button></td>
         </tr>
     </tbody>
 </table>
