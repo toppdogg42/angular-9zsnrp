@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import {HttpClientModule} from '@angular/common/http'
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -19,7 +19,7 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  imports:      [ BrowserModule,AppRoutingModule, FormsModule, ],
+  imports:      [ BrowserModule,AppRoutingModule, FormsModule,HttpClientModule ],
   exports:[RouterModule],
   declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, HomeComponent, QlspComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, AboutComponent ],
   bootstrap:    [ AppComponent ],
