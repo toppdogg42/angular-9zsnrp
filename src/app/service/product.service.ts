@@ -13,11 +13,13 @@ export class ProductService {
   constructor(
     private http:HttpClient
   ) {}
-  getProduct(id) {
-    return this.products.find(product => product.id ==id);
-  }
-  getProducts(): Observable<Product[]>{
 
+  getProduct(id): Observable<Product> {
+    console.log(id);
+    return this.http.get<Product>(`${this.api}/${id}`);
+  }
+
+  getProducts(): Observable<Product[]>{
     return this.http.get<Product[]>(`${this.api}/product`);
   }
   
