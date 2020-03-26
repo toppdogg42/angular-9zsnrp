@@ -22,4 +22,5 @@ getProduct(){
   showDetail(product) {
     this.selected = product;
   }
+  
 }

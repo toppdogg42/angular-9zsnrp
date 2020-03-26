@@ -23,7 +23,7 @@ export class ProductService {
   }
   
   addProduct(product): Observable<Product> {
-    let newObj = { id: 4, ...product };
+   
    return this.http.post<Product>(`${this.api}`,product);
   }
   removeProduct(id): Observable<Product>  {
