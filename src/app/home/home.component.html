@@ -1,40 +1,47 @@
-
 <!-- <div class="container">
     <div class="row">     
         <div class="col-lg-3">
             <app-category></app-category>
         </div>
         <!-- /.col-lg-3 -->
-        <!-- <div class="col-lg-9"> -->
-            <app-slide></app-slide>
-            <!-- <div> <div class="container"> -->
-    <!-- </div></div> -->
-            <!-- <app-product-list></app-product-list> -->
-            <!-- /.row -->
-        <!-- </div> -->
-        <!-- /.col-lg-9 -->
-    <!-- </div> -->
-    <!-- /.row -->
+<!-- <div class="col-lg-9"> -->
+<app-slide></app-slide>
+<!-- <div> <div class="container"> -->
+<!-- </div></div> -->
+<!-- <app-product-list></app-product-list> -->
+<!-- /.row -->
+<!-- </div> -->
+<!-- /.col-lg-9 -->
+<!-- </div> -->
+<!-- /.row -->
 <!-- </div> -->
 <!-- /.container -->
 <section>
-        <div class="container" style="margin-top: 20px;">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="left-sidebar">
-                         <app-category></app-category>
-                        <!--/category-productsr-->
-                    </div>
-                </div>
+	<div class="container" style="margin-top: 20px;">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="left-sidebar">
+					<app-category></app-category>
+					<!--/category-productsr-->
+				</div>
+			</div>
 
-                <div class="col-sm-9 padding-right">
-                    <div class="features_items">
-                        <!--features_items-->
-                        <h2 class="title text-center">Sản phẩm mới</h2>
-                        <app-product-list></app-product-list>
-                    </div>
-                    <!--features_items-->
-                </div>
-            </div>
-        </div>
-    </section>
+			<div class="col-sm-9 padding-right">
+				<div class="features_items">
+					<!--features_items-->
+					<h2 class="title text-center">Sản phẩm mới</h2>
+					<form class="form-inline">
+							<div class="form-group mx-sm-3 mb-2">
+								<label for="search" class="sr-only">Search</label>
+								<input type="text" class="form-control" id="search" placeholder="Search">
+                	<button type="submit" class="btn btn-outline-primary" >Tìm kiếm</button>
+              </div>
+					</form>
+          <br>
+					<app-product-list></app-product-list>
+				</div>
+				<!--features_items-->
+			</div>
+		</div>
+	</div>
+</section>
