@@ -22,6 +22,7 @@ export class QlspComponent implements OnInit {
 products = Data;
   removeItem(id){
     // this.products = this.products.filter(product => product.id != id);
-    this.products = this.productService.removeProduct(id);
+    this.productService.removeProduct(id).subscribe(reponse =>{
+       this.products= this.products.filter(product => product.id != reponse.id)});
   }
 }

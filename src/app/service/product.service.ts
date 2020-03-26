@@ -26,9 +26,9 @@ export class ProductService {
     let newObj = { id: 4, ...product };
    return this.http.post<Product>(`${this.api}`,product);
   }
-  // removeProduct(id) {
-  //   return this.products = this.products.filter(product => product.id != id);
-  // }
+  removeProduct(id): Observable<Product>  {
+   return this.http.delete<Product>(`${this.api}/${id}`);
+  }
   updateProduct(product): Observable<Product>{
     return this.http.put<Product>(`${this.api}/${product.id}`,product);
   }
