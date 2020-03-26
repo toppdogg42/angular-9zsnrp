@@ -9,17 +9,17 @@ import {Observable} from 'rxjs';
 })
 export class ProductService {
   // products = Data;
-  api= 'https://5e7af63b0e04630016332707.mockapi.io'
+  api= 'https://5e7af63b0e04630016332707.mockapi.io/product'
   constructor(
     private http:HttpClient
   ) {}
 
   getProduct(id): Observable<Product> {
-    return this.http.get<Product>(`${this.api}/product/${id}`);
+    return this.http.get<Product>(`${this.api}/${id}`);
   }
 
   getProducts(): Observable<Product[]>{
-    return this.http.get<Product[]>(`${this.api}/product`);
+    return this.http.get<Product[]>(this.api);
   }
   
   // addProduct(product) {
@@ -29,7 +29,7 @@ export class ProductService {
   // removeProduct(id) {
   //   return this.products = this.products.filter(product => product.id != id);
   // }
-  // updateProduct(product){
-  //   return this.products.map( item => item.id === product.id ? product : item);
-  // }
+  updateProduct(product): Observable<Product>{
+    return this.http.put<Product>(`${this.api}/${product.id}`,product);
+  }
 }

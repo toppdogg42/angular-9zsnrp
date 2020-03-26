@@ -11,7 +11,7 @@ const routes: Routes =[
 {path: 'home',component: HomeComponent},
 {path: 'qlsp',component: QlspComponent},
 { path: 'about', component: AboutComponent},
-{ path: 'qlsp/:id', component: ProductEditComponent},
+{ path: 'edit/:productID', component: ProductEditComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

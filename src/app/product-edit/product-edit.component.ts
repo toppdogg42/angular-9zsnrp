@@ -20,12 +20,16 @@ product: Product;
     this.getProduct();
   }
 getProduct(){
-    this.route.params.subscribe(param => {
-      this.product = this.productService.getProduct(param.id);
+   this.route.params.subscribe(param=>{
+     this.productService.getProduct(param.productID).subscribe(data =>{
+       this.product= data;
+     });
     })
   }
-  submitForm(){
-    this.productService.updateProduct(this.product);
-    this.router.navigate(['/qlsp']);
+  updataProduct (){
+    this.productService.updateProduct(this.product).subscribe(data =>{
+      this.router.navigate(['/qlsp']);
+    });
+    
   }
 }

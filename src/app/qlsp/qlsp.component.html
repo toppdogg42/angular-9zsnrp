@@ -19,7 +19,7 @@
             <td>{{product.price}}</td>
             <td>{{product.desc}}</td>
             <td>{{product.status ? 'Còn hàng' : 'Hết hàng'}}</td>
-            <td><button class="btn btn-primary" (click)="removeItem(product.id)">Xoá</button><button class="btn btn-primary" routerLink="/qlsp/{{product.id}}">Sửa</button></td>
+            <td><button class="btn btn-primary" (click)="removeItem(product.id)">Xoá</button><button class="btn btn-primary" routerLink="/edit/{{product.id}}">Sửa</button></td>
         </tr>
     </tbody>
 </table>
