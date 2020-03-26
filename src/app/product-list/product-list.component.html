@@ -1,23 +1,47 @@
-<div class="row">
-    <!-- <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
+<!-- <div class="row"> -->
+	<!-- <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
     <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
     <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product> -->
-    <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
-        <div class="card h-100">
-            <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">{{product.name}}</a>
-                </h4>
-                <h5>{{product.price}}</h5>
-                <p class="card-text">{{product.desc}}</p>
-                <p class="card-text">{{product.status ? 'Còn hàng' : 'Hết hàng'}}</p>
-                <!-- <button (click)="showDetail(product)">Chi tiết</button> -->
-                <button routerLink="/product/{{product.id}}">Chi tiết</button>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
-        </div>
-    </div>
+	<!-- <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
+		<div class="card h-100">
+			<a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+				<div class="card-body">
+					<h4 class="card-title">
+						<a href="#">{{product.name}}</a>
+					</h4>
+					<h5>{{product.price}}</h5>
+					<p class="card-text">{{product.desc}}</p>
+					<p class="card-text">{{product.status ? 'Còn hàng' : 'Hết hàng'}}</p>
+					<!-- <button (click)="showDetail(product)">Chi tiết</button> -->
+					<!-- <button routerLink="/product/{{product.id}}">Chi tiết</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+				</div>
+		</div> -->
+	<!-- </div> --> 
+<!-- </div> -->
+<!-- a -->
+<div ngClass="col-sm-4" *ngFor="let product of products">
+	<div class="product-image-wrapper">
+		<div class="single-products">
+			<div class="productinfo text-center">
+				<a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+				<h2>{{product.name}}</h2>
+				<p>{{product.name}}</p>
+				<a href="# " class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+			</div>
+			<div class="product-overlay">
+				<div class="overlay-content">
+					<h2>{{product.status ? 'Còn hàng' : 'Hết hàng'}}</h2>
+					<p>{{product.desc}}</p>
+					<a href="#" class="btn btn-default add-to-cart "><i class="fa fa-shopping-cart"></i>Add to
+						cart</a>
+				</div>
+			</div>
+		</div>
+		<div class="choose">
+			<button routerLink="/product/{{product.id}}">Chi tiết</button>
+		</div>
+	</div>
 </div>
