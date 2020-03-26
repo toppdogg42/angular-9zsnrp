@@ -7,7 +7,7 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { AboutComponent } from './about/about.component';
 const routes: Routes =[
 {path: '',redirectTo: '/home',pathMatch:'full'},
-{path: 'product/:id',component: ProductDetailComponent},
+{path: 'product/:productID',component: ProductDetailComponent},
 {path: 'home',component: HomeComponent},
 {path: 'qlsp',component: QlspComponent},
 { path: 'about', component: AboutComponent},

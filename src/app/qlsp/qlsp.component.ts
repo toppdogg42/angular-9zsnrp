@@ -14,7 +14,11 @@ export class QlspComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.getProduct();
   }
+  getProduct(){
+  this.productService.getProducts().subscribe(data =>{this.products = data})
+}
 products = Data;
   removeItem(id){
     // this.products = this.products.filter(product => product.id != id);
