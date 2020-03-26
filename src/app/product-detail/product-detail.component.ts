@@ -8,8 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-// @Input('data') product: Product;
- product: Product;
+ @Input('data') product: Product;
   constructor(
     private productService: ProductService,
     private route: ActivatedRoute
@@ -19,10 +18,8 @@ export class ProductDetailComponent implements OnInit {
     this.getProduct();
   }
 getProduct(){
-  this.route.params.subscribe(param =>{
-    this.productService.getProduct(param.productID).subscribe(data=>{
-      console.log(data);
+  this.route.params.subscribe(param=>{
+      this.product = this.productService.getProduct(param.id);
     })
-  });
 }
 }

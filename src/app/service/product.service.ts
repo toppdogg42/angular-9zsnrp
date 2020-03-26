@@ -14,9 +14,8 @@ export class ProductService {
     private http:HttpClient
   ) {}
 
-  getProduct(id): Observable<Product> {
-    console.log(id);
-    return this.http.get<Product>(`${this.api}/${id}`);
+  getProduct(id) {
+    return this.products.find(product => product.id ==id);
   }
 
   getProducts(): Observable<Product[]>{
