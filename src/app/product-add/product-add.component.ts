@@ -19,9 +19,7 @@ product:Product = new Product();
     
   }
   
-
 addProduct(){
-  this.productService.addProduct(this.product);
+  this.productService.addProduct(this.product).subscribe(data=> this.router.navigateByUrl("/qlsp"));
 }
-
 }

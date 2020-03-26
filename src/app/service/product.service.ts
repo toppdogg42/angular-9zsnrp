@@ -22,10 +22,10 @@ export class ProductService {
     return this.http.get<Product[]>(this.api);
   }
   
-  // addProduct(product) {
-  //   let newObj = { id: 4, ...product };
-  //   this.products.push(newObj);
-  // }
+  addProduct(product): Observable<Product> {
+    let newObj = { id: 4, ...product };
+   return this.http.post<Product>(`${this.api}`,product);
+  }
   // removeProduct(id) {
   //   return this.products = this.products.filter(product => product.id != id);
   // }

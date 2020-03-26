@@ -5,12 +5,14 @@ import { QlspComponent } from './qlsp/qlsp.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { AboutComponent } from './about/about.component';
+import { ProductAddComponent } from './product-add/product-add.component';
 const routes: Routes =[
 {path: '',redirectTo: '/home',pathMatch:'full'},
 {path: 'product/:productID',component: ProductDetailComponent},
 {path: 'home',component: HomeComponent},
 {path: 'qlsp',component: QlspComponent},
 { path: 'about', component: AboutComponent},
+{ path: 'add', component: ProductAddComponent},
 { path: 'edit/:productID', component: ProductEditComponent},
 ];
 @NgModule({
