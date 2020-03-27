@@ -1,0 +1,10 @@
+/*about page end*/
+
+.cms-banner-left:hover img,
+.md1:hover img,
+.md2:hover img,
+.cms-banner-right:hover img,
+.cms-banner-middle:hover img,
+#subbanner4:hover img {
+    opacity: 0.7;
+}

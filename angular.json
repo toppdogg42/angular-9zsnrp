@@ -23,9 +23,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/css/main.css",
+              "src/css/animate.css",
+              "src/css/bootstrap.min.css",
+              "src/css/font-awesome.min.css",
+              "src/css/prettyPhoto.css",
+              "src/css/price-range.css",
+              "src/css/responsive.css",
+              "src/css/stylesheet.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/main.js",
+              "src/js/jquery.js",
+              "src/js/bootstrap.min.js",
+              "src/js/jquery.scrollUp.min.js",
+              "src/js/price-range.js",
+              "src/js/jquery.prettyPhoto.js"
+            ]
           },
           "configurations": {
             "production": {
