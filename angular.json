@@ -24,22 +24,22 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/css/main.css",
-              "src/css/animate.css",
-              "src/css/bootstrap.min.css",
-              "src/css/font-awesome.min.css",
-              "src/css/prettyPhoto.css",
-              "src/css/price-range.css",
-              "src/css/responsive.css",
-              "src/css/stylesheet.css"
+              "src/assets/css/main.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/prettyPhoto.css",
+              "src/assets/css/price-range.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/stylesheet.css"
             ],
             "scripts": [
-              "src/js/main.js",
-              "src/js/jquery.js",
-              "src/js/bootstrap.min.js",
-              "src/js/jquery.scrollUp.min.js",
-              "src/js/price-range.js",
-              "src/js/jquery.prettyPhoto.js"
+              "src/assets/js/main.js",
+              "src/assets/js/jquery.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/jquery.scrollUp.min.js",
+              "src/assets/js/price-range.js",
+              "src/assets/js/jquery.prettyPhoto.js"
             ]
           },
           "configurations": {
